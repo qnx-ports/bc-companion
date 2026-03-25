@@ -4,7 +4,7 @@
 
 pkgname=bc
 pkgver=1.08.2
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Arbitrary precision numeric processing language (calculator)"
 url="https://www.gnu.org/software/bc/bc.html"
 arch="all"
@@ -40,7 +40,6 @@ package() {
     make DESTDIR="$pkgdir" install
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 0876a4c5bfc23da79479519c6a8e03ac9f59ae54077eb71ffdcc6ddaccb76c4b7595b088e89e6ad82d833c072eeff5b378178084276584813c00eedace4c6f8c  bc-1.08.2.tar.gz
 "
